@@ -10,7 +10,7 @@ dockerpath='rrishabhbansal96/udacity_devops'
 # Step 2
 # Run the Docker Hub container with kubernetes
 # kubectl run microservice --image=$dockerpath --port=80
-kubectl run microservice --image=$dockerpath --port=80
+kubectl run udacity --image=$dockerpath --port=80
 
 # Step 3:
 # List kubernetes pods
@@ -18,4 +18,4 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward deployment/microservice 8000:80 
+kubectl port-forward udacity 8000:80 
