@@ -40,6 +40,4 @@ jobs:
           name: run lint
           command: |
             . venv/bin/activate
-            pip uninstall pandas -y
-            pip install pandas
             make lint 
