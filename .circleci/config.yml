@@ -35,7 +35,7 @@ jobs:
             pip install pylint pytest black ipython
             make install
             # Install hadolint
-            wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
+            sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
             sudo chmod +x hadoline
             sudo mv hadolint /usr/bin/
       - save_cache:
